@@ -15,7 +15,6 @@ npm-debug.log*
 
 # vscode, idea, sublime
 .idea/**
-.vscode/**
 !/.vscode/launch.json
 !/.vscode/settings.json
 *.sublime-project
@@ -42,3 +41,7 @@ tests/e2e/coverage/.gendata
 
 # memleak log output
 tests/e2e/memleaks/.logs/
+config.bat
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat

@@ -4,8 +4,12 @@
   "type": "module",
   "license": "MIT",
   "author": "TradingView, Inc.",
-  "description": "Wizard-like CLI tool for scaffolding a new plugin for Lightweight Charts™",
-  "keywords": ["lightweight-charts", "lwc-plugin", "plugins"],
+  "description": "Wizard-like CLI tool for scaffolding a new plugin for Lightweight Charts\u2122",
+  "keywords": [
+    "lightweight-charts",
+    "lwc-plugin",
+    "plugins"
+  ],
   "bin": {
     "create-lwc-plugin": "index.js"
   },
@@ -17,8 +21,8 @@
     "dist"
   ],
   "scripts": {
-    "dev": "unbuild --stub && echo 'now run `node index.js`'",
-    "build": "unbuild",
+    "dev": "node init && unbuild --stub && echo 'now run `node index.js`'",
+    "build": "node init && unbuild",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "npm run build"
   },

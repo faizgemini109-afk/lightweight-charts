@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "cross-env TYPEDOC_WATCH=true docusaurus start",
-    "build": "node scripts/generate-versions-dts.js && docusaurus build",
+    "start": "node init && cross-env TYPEDOC_WATCH=true docusaurus start",
+    "build": "node init && node scripts/generate-versions-dts.js && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
